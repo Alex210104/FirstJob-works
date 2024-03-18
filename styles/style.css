@@ -1,0 +1,1233 @@
+@charset "UTF-8";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*字體*/
+@font-face {
+  font-family: NotoSansTC-Black;
+  src: url("/fonts/NotoSansTC-Black.otf");
+}
+@font-face {
+  font-family: NotoSansTC-Bold;
+  src: url("/fonts/NotoSansTC-Bold.otf");
+}
+@font-face {
+  font-family: NotoSansTC-Regular;
+  src: url("/fonts/NotoSansTC-Regular.otf");
+}
+@font-face {
+  font-family: NotoSansTC-Thin;
+  src: url("/fonts/NotoSansTC-Thin.otf");
+}
+@font-face {
+  font-family: NotoSansTC-Light;
+  src: url("/fonts/NotoSansTC-Light.otf");
+}
+@font-face {
+  font-family: NotoSansTC-Medium;
+  src: url("/fonts/NotoSansTC-Medium.otf");
+}
+
+/*導覽列*/
+body .navbar {
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  z-index: 1000;
+}
+body #navbarNav.collapse.navbar-collapse {
+  justify-content: flex-end;
+}
+
+body .navbar-expand-lg .navbar-nav .nav-link {
+  padding-left: 3rem;
+  font-size: large;
+  color: white;
+  font-weight: 900;
+}
+body .navbar .container img {
+  margin-left: 5rem;
+  padding: 1rem 1rem;
+}
+
+/*頭圖*/
+body .banner .box-img {
+  width: 100%;
+  position: relative;
+  z-index: -1;
+}
+
+/* banner標題*/
+body .banner .box-font {
+  position: absolute;
+  z-index: 1;
+  display: inline;
+  flex-wrap: nowrap;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-align: center;
+  font-family: NotoSansTC-Bold;
+}
+body .banner .box-font .text1 {
+  font-size: 8em;
+  font-weight: 900;
+}
+body .banner .box-font .text2 {
+  font-size: 4em;
+  font-weight: 900;
+  margin-bottom: 3rem;
+}
+body .banner .box-font .text3 {
+  color: black;
+  font-size: 1.5em;
+  font-weight: 500;
+  font-family: NotoSansTC-Bold;
+}
+
+/*背景圖片*/
+body .backgroundimg {
+  margin-top: -15%;
+}
+
+/*服務項目*/
+body .service {
+  padding-top: 25%;
+  font-family: NotoSansTC-Bold;
+  position: relative;
+}
+body .service .mx-auto {
+  max-width: 600px;
+}
+body .service .service-title {
+  text-align: center;
+  font-size: 5.5em;
+  font-weight: 900;
+}
+body .service .service-area1 {
+  position: relative;
+}
+
+/*裝飾物*/
+body .service .service-area1 .decor-ywline img {
+  max-width: 208px;
+  position: absolute;
+  top: -125%;
+  left: 116%;
+  transform: translate(-50%, 0%);
+}
+body .service .service-area1 .decor-phone img {
+  position: absolute;
+  top: -100%;
+  left: -40%;
+  transform: translate(-50%, 0%);
+  z-index: 2;
+}
+body .service .decor-pad {
+  position: absolute;
+  top: 48%;
+  right: 0%;
+  transform: translate(0%, 0%);
+  z-index: 2;
+  width: 400px;
+}
+body .service .decor-pad img {
+  width: 100%;
+}
+/*服務區塊一*/
+body .service .service-area1 img {
+  width: 600px;
+}
+body .service .service-text1 {
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  font-weight: 900;
+  width: 28rem;
+  align-items: center;
+}
+
+/*服務區塊二*/
+body .service .service-area2 {
+  padding-left: 3%;
+  margin-top: -7%;
+  position: relative;
+}
+body .service .service-area2 img {
+  width: 600px;
+}
+body .service .service-text2 {
+  position: absolute;
+  top: 25%;
+  left: 65%;
+  transform: translate(-50%, 0%);
+  font-weight: 900;
+  flex-direction: row-reverse;
+  width: 26rem;
+  align-items: center;
+}
+
+/*服務區塊三*/
+body .service .service-area3 {
+  margin-top: -7%;
+  position: relative;
+}
+body .service .service-area3 img {
+  width: 600px;
+}
+body .service .service-text3 {
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  font-weight: 900;
+  width: 28rem;
+  align-items: center;
+}
+
+/*服務區塊四*/
+body .service .service-area4 {
+  padding-left: 3%;
+  margin-top: -7%;
+  position: relative;
+}
+body .service .service-area4 img {
+  width: 600px;
+}
+body .service .service-text4 {
+  position: absolute;
+  top: 25%;
+  left: 65%;
+  transform: translate(-50%, 0%);
+  font-weight: 900;
+  flex-direction: row-reverse;
+  width: 26rem;
+  align-items: center;
+}
+
+/*服務標題、內容*/
+body .service .left-title {
+  font-size: x-large;
+  font-weight: 900;
+}
+body .service .right-title {
+  font-size: x-large;
+  font-weight: 900;
+}
+body .service .left-text {
+  font-size: larger;
+  font-weight: 900;
+}
+body .service .right-text {
+  font-size: larger;
+  font-weight: 900;
+}
+
+/*裝飾物筆*/
+body .client .decor-pen img {
+  position: absolute;
+  top: -7%;
+  left: 20%;
+  transform: translate(-50%, 0%);
+  max-width: 50%;
+}
+
+/*代表客戶區*/
+body .client {
+  margin-top: -1%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+body .client .client-title {
+  position: absolute;
+  font-size: 5.5em;
+  font-weight: 900;
+  top: 15%;
+  left: 50%;
+  transform: translate(-50%, 0%);
+}
+
+/*客戶區黃色背景*/
+body .client .yw-img {
+  margin: auto;
+}
+body .client .yw-img img {
+  max-width: 100vw;
+}
+
+/*客戶區logo*/
+body .client-logo {
+  /* display: flex;
+  flex-wrap: wrap; */
+  justify-content: center;
+  width: 1200px;
+  position: absolute;
+  top: 40%;
+  left: 53%;
+  transform: translate(-50%, 0%);
+  max-width: 65%;
+}
+body .client-logo img {
+  padding-bottom: 4rem;
+  margin-right: 0.9rem;
+  width: 100%;
+}
+body .client-logo .topfix1 {
+  padding-top: 0.5rem;
+}
+body .client-logo .topfix2 {
+  padding-top: 2rem;
+}
+
+/*聯絡我們區*/
+body .contact .contact-title {
+  color: white;
+  font-size: 5.5em;
+  font-weight: 900;
+  text-align: center;
+  padding-top: 3rem;
+}
+body .contact .contact-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  flex-direction: column;
+  /* height: 1200px; */
+}
+
+/*聯絡-姓名區*/
+body .contact .contact-container .name-area {
+  margin: 10px;
+  position: relative;
+}
+body .contact .contact-container .name-text {
+  position: absolute;
+  top: 51%;
+  left: 0%;
+  transform: translate(0%, -50%);
+  font-weight: 900;
+  font-size: x-large;
+  display: flex;
+  width: 100%;
+  padding: 0px 55px;
+  white-space: nowrap;
+}
+body .contact .contact-container .name-text input {
+  width: 100%;
+  border: none;
+  background-color: transparent;
+  outline: none;
+}
+
+/*聯絡-公司區*/
+body .contact .contact-container .company-area {
+  position: relative;
+}
+body .contact .contact-container .company-text {
+  position: absolute;
+  top: 51%;
+  left: 0%;
+  transform: translate(0%, -50%);
+  font-weight: 900;
+  font-size: x-large;
+  display: flex;
+  width: 100%;
+  padding: 0px 55px;
+  white-space: nowrap;
+}
+body .contact .contact-container .company-text input {
+  width: 100%;
+  border: none;
+  background-color: transparent;
+  outline: none;
+}
+
+/*聯絡-電話區*/
+body .contact .contact-container .tel-area {
+  position: relative;
+  margin: 10px;
+}
+body .contact .contact-container .tel-text {
+  position: absolute;
+  top: 51%;
+  left: 0%;
+  transform: translate(0%, -50%);
+  font-weight: 900;
+  font-size: x-large;
+  display: flex;
+  width: 100%;
+  padding: 0px 55px;
+  white-space: nowrap;
+}
+body .contact .contact-container .tel-text input {
+  width: 100%;
+  border: none;
+  background-color: transparent;
+  outline: none;
+}
+
+/*聯絡-信箱區*/
+body .contact .contact-container .email-area {
+  position: relative;
+}
+body .contact .contact-container .email-text {
+  position: absolute;
+  top: 51%;
+  left: 0%;
+  transform: translate(0%, -50%);
+  font-weight: 900;
+  font-size: x-large;
+  display: flex;
+  width: 100%;
+  padding: 0px 55px;
+  white-space: nowrap;
+}
+body .contact .contact-container .email-text input {
+  width: 100%;
+  border: none;
+  background-color: transparent;
+  outline: none;
+}
+
+/*聯絡-留言區*/
+body .contact .contact-container .describe-area {
+  position: relative;
+  margin-top: 10px;
+}
+body .contact .contact-container .describe-area .describe-text1 {
+  position: absolute;
+  top: 14%;
+  left: 5%;
+  transform: translate(0%, -50%);
+  font-weight: 900;
+  font-size: x-large;
+}
+
+body .contact .describe-area .describe-text2 textarea {
+  border: none;
+  background-color: transparent;
+  outline: none;
+  font-weight: 900;
+  font-size: x-large;
+  width: 74rem;
+  height: 16rem;
+  position: absolute;
+  top: 57%;
+  left: 5%;
+  transform: translate(0%, -50%);
+}
+body .contact .describe-area .describe-text2 {
+  padding-top: 3rem;
+  text-align: center;
+}
+
+/*聯絡-按鈕區*/
+body .contact .describe-area .describe-text2 button {
+  font-weight: 900;
+  font-size: large;
+  width: 13rem;
+  height: 3rem;
+  border: none;
+  border-radius: 2.5rem;
+  color: white;
+  background-color: rgb(72, 71, 71);
+  outline: none;
+  margin-bottom: 2rem;
+}
+
+/*RWD手機板*/
+@media screen and (max-width: 576px) {
+  /*導覽列*/
+  body .navbar .container img {
+    margin-left: 1rem;
+    padding: 1rem 1rem;
+  }
+  body .navbar-expand-lg .navbar-nav .nav-link {
+    padding-left: 1rem;
+    font-size: medium;
+    color: white;
+    font-weight: 900;
+  }
+
+  /*banner*/
+  body .banner .box-font {
+    top: 50%;
+  }
+  body .banner .box-font .text1 {
+    font-size: 4em;
+  }
+
+  body .banner .box-font .text1-1 {
+    font-size: 4em;
+  }
+  body .banner .box-font .text2 {
+    font-size: 1.8em;
+  }
+
+  body .banner .box-font .text3 {
+    font-size: 1.2em;
+  }
+  body .banner .box-font .arrow {
+    margin-top: 15%;
+  }
+  body .backgroundimg {
+    margin-top: -35%;
+  }
+
+  /*服務項目區*/
+  body .service .service-area1 .decor-ywline img {
+    display: none;
+  }
+  body .service .service-area1 .decor-phone img {
+    top: 60%;
+    left: 13%;
+    max-width: 75%;
+  }
+  body .service .decor-pad {
+    top: 84%;
+    width: 220px;
+  }
+  body .service .decor-pad img {
+    width: 100%;
+  }
+  body .service .service-title {
+    font-size: 3em;
+    margin-bottom: 8%;
+  }
+  body .service .service-area1 {
+    padding-left: 0%;
+    margin-top: 30%;
+    margin-left: 10%;
+  }
+  body .service .service-area2 {
+    padding-left: 0%;
+    margin-top: 0%;
+  }
+  body .service .service-area3 {
+    margin-top: 0%;
+    padding-left: 0%;
+    margin-left: 10%;
+  }
+  body .service .service-area4 {
+    padding-left: 0%;
+    margin-top: -30%;
+  }
+  body .service .service-area1 img {
+    width: 210px;
+  }
+  body .service .service-area2 img {
+    width: 210px;
+  }
+  body .service .service-area3 img {
+    width: 210px;
+  }
+  body .service .service-area4 img {
+    width: 210px;
+  }
+
+  body .service .service-text1 {
+    position: absolute;
+    top: 15%;
+    left: 53%;
+    transform: translate(-50%, 0%);
+    width: auto;
+  }
+  body .service .service-text2 {
+    position: absolute;
+    top: 18%;
+    left: 53%;
+    transform: translate(-50%, 0%);
+    width: auto;
+  }
+  body .service .service-text3 {
+    position: absolute;
+    top: 18%;
+    left: 53%;
+    transform: translate(-50%, 0%);
+    width: auto;
+  }
+  body .service .service-text4 {
+    position: absolute;
+    top: 18%;
+    left: 53%;
+    transform: translate(-50%, 0%);
+    width: auto;
+  }
+
+  /*服務項目標題、內容，依照電腦版的名稱設定*/
+  body .service .service-text1 .left-title {
+    text-align: center;
+    font-size: 1.3em;
+  }
+  body .service .service-text1 .right-text {
+    padding-top: 25%;
+    white-space: nowrap;
+    font-size: 0.9em;
+  }
+  body .service .service-text2 .right-title {
+    text-align: center;
+    font-size: 1.3em;
+  }
+  body .service .service-text2 .left-text {
+    padding-top: 25%;
+    white-space: nowrap;
+    font-size: 0.9em;
+  }
+  body .service .service-text3 .left-title {
+    text-align: center;
+    font-size: 1.3em;
+  }
+  body .service .service-text3 .right-text {
+    padding-top: 25%;
+    white-space: nowrap;
+    font-size: 0.9em;
+  }
+  body .service .service-text4 .right-title {
+    text-align: center;
+    font-size: 1.3em;
+  }
+  body .service .service-text4 .left-text {
+    padding-top: 25%;
+    white-space: nowrap;
+    font-size: 0.9em;
+  }
+
+  /*裝飾物筆*/
+  body .client .decor-pen img {
+    top: -150%;
+    left: 20%;
+    transform: translate(-50%, -50%);
+    width: 50%;
+  }
+
+  /*代表客戶區*/
+  body .client {
+    margin-top: 10%;
+  }
+  body .client .client-title {
+    width: 200px;
+    font-size: 3rem;
+    margin-top: -6%;
+  }
+  body .client .client-logo {
+    max-width: 85%;
+    top: 35%;
+  }
+  body .client .client-logo img {
+    width: 100%;
+    padding-bottom: 1rem;
+  }
+  body .client .client-logo .rwd-logo img {
+    width: 100%;
+  }
+  /*注意RWD的LOGO有換過位置!*/
+  /*welltivity*/
+  body .client .client-logo .well {
+    align-self: center;
+  }
+  body .client .client-logo .well img {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    width: 100%;
+  }
+  /*樂津*/
+  body .client .client-logo .food img {
+    width: 100%;
+  }
+  /*目框*/
+  body .client .client-logo .eyewear img {
+    width: 100%;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+  }
+  /*社團法人*/
+  body .client .client-logo .taiwan img {
+    width: 100%;
+  }
+  /*主丼*/
+  body .client .client-logo .rice img {
+    width: 100%;
+  }
+  body .client .client-logo .topfix2 {
+    padding-top: 0;
+  }
+
+  /*聯絡我們區*/
+  body .contact .contact-title {
+    font-size: 3rem;
+    margin-bottom: 8%;
+  }
+  body .contact .contact-container {
+    width: 350px;
+    margin: auto;
+  }
+  body .contact .contact-container .section1 .name-area {
+    margin: 0px;
+  }
+  body .contact .contact-container .section1 .name-area img {
+    max-width: 350px;
+    margin-bottom: 3%;
+  }
+  body .contact .contact-container .section1 .company-area img {
+    max-width: 350px;
+    margin-bottom: 3%;
+  }
+  body .contact .contact-container .section2 .tel-area {
+    margin: 0px;
+  }
+  body .contact .contact-container .section2 .tel-area img {
+    max-width: 350px;
+    margin: 0px;
+    margin-bottom: 3%;
+  }
+  body .contact .contact-container .section2 .email-area img {
+    max-width: 350px;
+    margin-bottom: 3%;
+  }
+  body .contact .contact-container .describe-area img {
+    max-width: 350px;
+  }
+  body .contact .contact-container .describe-area textarea {
+    max-width: 350px;
+  }
+  body .contact .contact-container .name-text {
+    top: 45%;
+    font-size: large;
+    padding: 0px 35px;
+  }
+  body .contact .contact-container .company-text {
+    top: 45%;
+    font-size: large;
+    padding: 0px 35px;
+  }
+  body .contact .contact-container .tel-text {
+    top: 45%;
+    font-size: large;
+    padding: 0px 35px;
+  }
+  body .contact .contact-container .email-text {
+    top: 45%;
+    font-size: large;
+    padding: 0px 35px;
+  }
+  body .contact .contact-container .describe-area .describe-text1 {
+    position: absolute;
+    top: 11%;
+    left: 8%;
+    transform: translate(0%, -50%);
+    font-weight: 900;
+    font-size: large;
+  }
+  body .contact .describe-area .describe-text2 button {
+    margin-top: -10%;
+    margin-left: -8%;
+  }
+}
+
+@media screen and (max-width: 391px) {
+  body .client .decor-pen img {
+    top: -165%;
+    left: 20%;
+    transform: translate(-50%, -50%);
+    width: 50%;
+  }
+}
+/*RWD435~576微調*/
+@media screen and (min-width: 435px) and (max-width: 576px) {
+  body .service .service-area1 .decor-ywline img {
+    display: none;
+  }
+
+  body .client .client-logo {
+    max-width: 576px;
+    top: 28%;
+  }
+  body .client .client-logo .rwd-logo img {
+    width: 100%;
+  }
+  body .client .client-logo .logo img {
+    width: 145px;
+  }
+  body .client .client-logo .well {
+    padding-top: 20px;
+  }
+  body .client .client-logo .well img {
+    width: 200px;
+  }
+
+  body .client .client-logo .eyewear {
+    padding-left: 20px;
+    padding-top: 20px;
+  }
+  body .client .client-logo .eyewear img {
+    width: 200px;
+  }
+  body .client .client-logo .food {
+    padding-top: 20px;
+  }
+  body .client .client-logo .food img {
+    width: 160px;
+  }
+  body .client .client-logo .taiwan {
+    padding-top: 20px;
+    padding-right: 20px;
+  }
+  body .client .client-logo .taiwan img {
+    width: 160px;
+  }
+  body .client .client-logo .rice {
+    padding-top: 50px;
+  }
+  body .client .client-logo .rice img {
+    width: 160px;
+  }
+  body .service .service-area1 img {
+    width: 260px;
+    margin-left: 20px;
+  }
+  body .service .service-area2 img {
+    width: 260px;
+  }
+  body .service .service-area3 img {
+    width: 260px;
+    margin-left: 20px;
+  }
+  body .service .service-area4 img {
+    width: 260px;
+  }
+}
+
+/*RWD577~767微調*/
+@media screen and (min-width: 577px) and (max-width: 767px) {
+  body .banner .box-font {
+    top: 60%;
+  }
+  body .banner .box-font .text1 {
+    font-size: 5em;
+  }
+  body .banner .box-font .text2 {
+    font-size: 2.5em;
+  }
+  body .banner .box-font .text3 {
+    font-size: 1.2em;
+  }
+  body .service .service-area1 .decor-ywline img {
+    display: none;
+  }
+  body .service .service-title {
+    font-size: 4em;
+  }
+  body .client .client-title {
+    font-size: 4em;
+  }
+  body .client .client-logo {
+    width: 80%;
+    top: 35%;
+  }
+  body .client-logo img {
+    max-width: 100%;
+  }
+  body .contact .contact-title {
+    font-size: 4em;
+  }
+}
+
+/*RWD平板區*/
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  body .banner .box-font {
+    top: 30%;
+  }
+  body .banner .box-font .text1 {
+    font-size: 4em;
+  }
+
+  body .banner .box-font .text1-1 {
+    font-size: 4em;
+  }
+  body .banner .box-font .text2 {
+    font-size: 1.8em;
+  }
+
+  body .banner .box-font .text3 {
+    font-size: 1.2em;
+  }
+  body .banner .box-font .arrow {
+    margin-bottom: -10%;
+  }
+  body .backgroundimg {
+    margin-top: -12%;
+  }
+
+  body .service .service-title {
+    font-size: 3.5em;
+    margin-top: 10%;
+    margin-bottom: 3%;
+  }
+  body .service .service-area1 {
+    padding-left: 0%;
+    margin-top: 30%;
+    margin-left: 10%;
+  }
+  body .service .service-area2 {
+    padding-left: 0%;
+    margin-top: 0%;
+  }
+  body .service .service-area3 {
+    margin-top: 0%;
+    padding-left: 0%;
+    margin-left: 10%;
+  }
+  body .service .service-area4 {
+    padding-left: 0%;
+    margin-top: -30%;
+  }
+  body .service .service-area1 img {
+    width: 300px;
+  }
+  body .service .service-area2 img {
+    width: 300px;
+  }
+  body .service .service-area3 img {
+    width: 300px;
+  }
+  body .service .service-area4 img {
+    width: 300px;
+  }
+  body .service .service-area1 .decor-ywline img {
+    display: none;
+  }
+  body .service .service-area1 .decor-phone img {
+    top: 56%;
+    left: 6%;
+    max-width: 95%;
+  }
+  body .service .decor-pad {
+    top: 85%;
+    right: 0%;
+    width: 370px;
+  }
+  body .service .decor-pad img {
+    width: 100%;
+  }
+  body .service .col-md-12 {
+    width: 50%;
+  }
+  body .service .service-text1 {
+    position: absolute;
+    top: 18%;
+    left: 53%;
+    transform: translate(-50%, 0%);
+    width: auto;
+  }
+  body .service .service-text2 {
+    position: absolute;
+    top: 18%;
+    left: 53%;
+    transform: translate(-50%, 0%);
+    width: auto;
+  }
+  body .service .service-text3 {
+    position: absolute;
+    top: 18%;
+    left: 53%;
+    transform: translate(-50%, 0%);
+    width: auto;
+  }
+  body .service .service-text4 {
+    position: absolute;
+    top: 18%;
+    left: 53%;
+    transform: translate(-50%, 0%);
+    width: auto;
+  }
+  body .service .service-text1 .left-title {
+    text-align: center;
+    font-size: 1.5em;
+  }
+  body .service .service-text1 .right-text {
+    padding-top: 25%;
+    white-space: nowrap;
+    font-size: 1.1em;
+  }
+  body .service .service-text2 .right-title {
+    text-align: center;
+    font-size: 1.5em;
+  }
+  body .service .service-text2 .left-text {
+    padding-top: 25%;
+    white-space: nowrap;
+    font-size: 1.1em;
+  }
+  body .service .service-text3 .left-title {
+    text-align: center;
+    font-size: 1.5em;
+  }
+  body .service .service-text3 .right-text {
+    padding-top: 25%;
+    white-space: nowrap;
+    font-size: 1.1em;
+  }
+  body .service .service-text4 .right-title {
+    text-align: center;
+    font-size: 1.5em;
+  }
+  body .service .service-text4 .left-text {
+    padding-top: 25%;
+    white-space: nowrap;
+    font-size: 1.1em;
+  }
+  body .client {
+    margin-top: 10%;
+  }
+  body .client .decor-pen {
+    display: none;
+  }
+  body .client .client-title {
+    width: 500px;
+    font-size: 3.5rem;
+    margin-top: -6%;
+    text-align: center;
+  }
+  body .client .client-logo {
+    max-width: 85%;
+    top: 30%;
+  }
+  body .client .yw-img img {
+    width: 100vw;
+  }
+  body .client .client-logo img {
+    width: 100%;
+    padding-bottom: 1rem;
+  }
+  body .client .client-logo .rwd-logo img {
+    width: 100%;
+  }
+  body .client .client-logo .well {
+    align-self: center;
+  }
+  body .client .client-logo .well img {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    width: 100%;
+  }
+  body .client .client-logo .food img {
+    width: 100%;
+  }
+  body .client .client-logo .eyewear img {
+    width: 100%;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+  }
+  body .client .client-logo .taiwan img {
+    width: 100%;
+  }
+  body .client .client-logo .rice img {
+    width: 100%;
+  }
+  body .client .client-logo .topfix2 {
+    padding-top: 0;
+  }
+  body .contact .contact-title {
+    font-size: 3.5rem;
+    margin-bottom: 8%;
+  }
+  body .contact .contact-container {
+    width: 500px;
+    margin: auto;
+  }
+  body .contact .contact-container .section1 .name-area {
+    margin: 0px;
+  }
+  body .contact .contact-container .section1 .name-area img {
+    max-width: 500px;
+    margin-bottom: 3%;
+  }
+  body .contact .contact-container .section1 .company-area img {
+    max-width: 500px;
+    margin-bottom: 3%;
+  }
+  body .contact .contact-container .section2 .tel-area {
+    margin: 0px;
+  }
+  body .contact .contact-container .section2 .tel-area img {
+    max-width: 500px;
+    margin: 0px;
+    margin-bottom: 3%;
+  }
+  body .contact .contact-container .section2 .email-area img {
+    max-width: 500px;
+    margin-bottom: 3%;
+  }
+  body .contact .contact-container .describe-area img {
+    max-width: 500px;
+  }
+  body .contact .contact-container .describe-area textarea {
+    max-width: 470px;
+    top: 43%;
+  }
+  body .contact .contact-container .name-text {
+    top: 45%;
+    font-size: large;
+    padding: 0px 35px;
+  }
+  body .contact .contact-container .company-text {
+    top: 45%;
+    font-size: large;
+    padding: 0px 35px;
+  }
+  body .contact .contact-container .tel-text {
+    top: 45%;
+    font-size: large;
+    padding: 0px 35px;
+  }
+  body .contact .contact-container .email-text {
+    top: 45%;
+    font-size: large;
+    padding: 0px 35px;
+  }
+  body .contact .contact-container .describe-area .describe-text1 {
+    position: absolute;
+    top: 9%;
+    left: 8%;
+    transform: translate(0%, -50%);
+    font-weight: 900;
+    font-size: large;
+  }
+  body .contact .describe-area .describe-text2 button {
+    margin-top: -10%;
+    margin-left: -8%;
+  }
+}
+
+/*RWD桌機1200PX區 原設定是1920PX*/
+@media screen and (min-width: 1200px) {
+  body .banner .box-font {
+    top: 45%;
+  }
+  body .banner .box-font .text1 {
+    font-size: 6.5em;
+  }
+  body .banner .box-font .text2 {
+    font-size: 3.5em;
+    font-weight: 900;
+    margin-bottom: 3rem;
+  }
+  body .banner .box-font .text3 {
+    color: black;
+    font-size: 1.3em;
+    font-weight: 500;
+    font-family: NotoSansTC-Bold;
+  }
+  body .service .service-area1 .decor-ywline img {
+    width: 50%;
+    top: -142%;
+    left: 90%;
+  }
+  body .service .service-area1 .decor-phone img {
+    top: -45%;
+    left: -29%;
+    max-width: 75%;
+  }
+  body .service .service-title {
+    font-size: 4.2em;
+    padding-bottom: 2rem;
+  }
+  body .client .client-title {
+    font-size: 4.2em;
+    top: 10%;
+  }
+  body .client .decor-pen img {
+    top: -8%;
+    left: 17%;
+    width: 25%;
+  }
+  body .client-logo {
+    top: 35%;
+  }
+  body .contact .contact-title {
+    font-size: 4.2em;
+  }
+  body .contact .contact-container .section1 .name-area img {
+    max-width: 480px;
+    margin-bottom: 3%;
+    margin-right: 10px;
+  }
+  body .contact .contact-container .section1 .name-area {
+    margin: 0px;
+  }
+
+  body .contact .contact-container .section1 .company-area img {
+    max-width: 480px;
+    margin-bottom: 3%;
+    margin-left: 10px;
+  }
+  body .contact .contact-container .section2 .tel-area {
+    margin: 0px;
+  }
+  body .contact .contact-container .section2 .tel-area img {
+    max-width: 480px;
+    margin: 0px;
+    margin-bottom: 3%;
+    margin-right: 10px;
+  }
+  body .contact .contact-container .section2 .email-area img {
+    max-width: 480px;
+    margin-bottom: 3%;
+    margin-left: 10px;
+  }
+  body .contact .contact-container .describe-area img {
+    max-width: 1000px;
+  }
+  body .contact .contact-container .describe-area textarea {
+    max-width: 470px;
+    top: 43%;
+  }
+  body .contact .contact-container .name-text {
+    top: 45%;
+    font-size: large;
+    padding: 0px 35px;
+  }
+  body .contact .contact-container .company-text {
+    top: 45%;
+    font-size: large;
+    padding: 0px 35px;
+  }
+  body .contact .contact-container .tel-text {
+    top: 45%;
+    font-size: large;
+    padding: 0px 35px;
+  }
+  body .contact .contact-container .email-text {
+    top: 45%;
+    font-size: large;
+    padding: 0px 35px;
+  }
+  body .contact .contact-container .describe-area .describe-text1 {
+    position: absolute;
+    top: 11%;
+    left: 4%;
+    transform: translate(0%, -50%);
+    font-weight: 900;
+    font-size: large;
+  }
+  body .contact .describe-area .describe-text2 button {
+    margin-top: -10%;
+    margin-left: -8%;
+  }
+}
+
+/*1920以上黃線調整*/
+@media screen and (min-width: 1920px) {
+  body .service .service-area1 .decor-ywline img {
+    max-width: 40%;
+    top: -200%;
+    left: 115%;
+  }
+}
